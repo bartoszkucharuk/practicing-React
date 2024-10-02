@@ -1,11 +1,14 @@
-import { useState } from 'react'
+import { Formik } from "formik";
 
-function App() {
-    return (
-    <>
-      <p>asdasd</p>
-    </>
+export default function App() {
+  return (
+    <div>
+      <Formik initialValues={{}} onSubmit={() => {}}>
+        <Form>
+          <Field type="email" name="email" className="lorem"/>
+          <button type="submit">Wyślij</button>
+        </Form>
+      </Formik>
+    </div>
   )
-}
-
-export default App
+ }
